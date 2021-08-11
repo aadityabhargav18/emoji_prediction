@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emojifier</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<style>
+
+.heading{
+  font-weight: 100;
+  font-size: 4em;
+  text-shadow: 1px 1px 5px black;
+}
+
+img{
+  height: 90%;
+  width: 100%;
+}
+
+.text{
+  font-size: 32px;
+  font-style: italic;
+}
+
+</style>
+
+</head>
+<body class="bg">
+  <div>
+      <div class="container-fluid jumbotron opac shadow-lg rounded jumbotron-fluid text-light">
+        <div class="container">
+          <h1 class="heading text-center">Emojifier</h1>
+          <h6 class="text-center"> Type your text to generate the Emoji... </h6>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <form class="form-inline" method="POST" action="/" enctype="multipart/form-data"> 
+          <textarea name="emojfile" rows="5" cols="50"></textarea>&nbsp;
+          <button type="submit" class="btn btn-primary inline"> Predict</button>
+        </form>
+        <br>
+        <br>
+        {% if your_result %}
+
+          <div class="row text-center center-block mx-auto" style="margin: 0 auto;">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <h1 style="text-align:center">{{your_result['text']}} {{your_result['emoji']}}</h1>    
+              </div>
+              <div class="col-sm-3"></div>
+          </div>
+        {% endif %}  
+
+      </div>
+
+      <footer class="page-footer font-small foot" style="bottom:0px;">
+        <div class="footer-copyright text-center py-3 text-white">© 2021 Copyright: Made with 💖 by Aaditya Bhargav     
+        </div>
+      </footer> 
+      
+    </div> 
+</body>
+</html>
