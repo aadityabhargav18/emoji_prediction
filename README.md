@@ -10,7 +10,7 @@ It uses an external package "emoji" in order to show the emoji and apply glove v
 ![Screenshot (392)](https://user-images.githubusercontent.com/67166208/221845518-38b8cfe1-1f70-4bb0-a05c-db8360d9300c.png)
 
 ## Tech Stack 💻
-**Client:** HTML, Python, Machine Learning
+**Client:** HTML, Python , Machine Learning
 
 ## Font 🗚
 1. Font Link : `<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">`
