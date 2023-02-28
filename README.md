@@ -7,7 +7,8 @@ It uses an external package "emoji" in order to show the emoji and apply glove v
 
 
 ## Screenshot of UI 📸
-![Screenshot (392)](https://user-images.githubusercontent.com/67166208/221845518-38b8cfe1-1f70-4bb0-a05c-db8360d9300c.png)
+![Screenshot (400)](https://user-images.githubusercontent.com/67166208/221965725-9bacfe36-b9c3-4405-b9ef-c9800170eaf0.png)
+
 
 ## Tech Stack 💻
 **Client:** HTML, Python , Machine Learning
